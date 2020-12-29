@@ -2,11 +2,13 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Logo from "../../assets/icons/Capture.png";
-import "./my-navbar.styles.css";
+import "./my-navbar.styles.css";  
+import {Link,NavLink} from "react-router-dom";
+
 
 const MyNavbar = () => {
   return (
-    <div>
+    <div className>
       <Navbar
         fixed="top"
         variant="light"
@@ -22,13 +24,13 @@ const MyNavbar = () => {
         <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto ">
-              <Nav.Link href="#home"style = {{color:" black"}}className="shadow bg-black rounded">Home</Nav.Link>
-              <Nav.Link href="#about"style = {{color:" black"}}className="shadow bg-black rounded">About</Nav.Link>
-              <Nav.Link href="#skills"style = {{color:" black"}}className="shadow bg-black rounded">Skills</Nav.Link>
-              <Nav.Link href="#experience"style = {{color:" black"}}className="shadow bg-black rounded">Education</Nav.Link>
-              <Nav.Link href="#projects"style = {{color:" black"}}className="shadow bg-black rounded">Projects</Nav.Link>
-              <Nav.Link href="#contact"style = {{color:" black"}}className="shadow bg-black rounded">Contact</Nav.Link>
+            <Nav className="mr-auto">
+              <Nav.Link href="#home" exact activeStyle = {{color:" red", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">Home</Nav.Link>
+              <Nav.Link href="#about"exact activeStyle  = {{color:" black", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">About</Nav.Link>
+              <Nav.Link href="#skills"exact activeStyle  = {{color:" black", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">Skills</Nav.Link>
+              <Nav.Link href="#experience"exact activeStyle  = {{color:" black", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">Education</Nav.Link>
+              <Nav.Link href="#projects"exact activeStyle  = {{color:" black", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">Projects</Nav.Link>
+              <Nav.Link href="#contact"exact activeStyle  = {{color:" black", backgroundColor: "rgba(135,206,235, 0.3)",marginRight:"5px"}}className="page">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>
