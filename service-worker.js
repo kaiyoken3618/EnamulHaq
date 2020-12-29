@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/EnamulHaq/precache-manifest.2c86167978fe7620f09b62bd5470fb71.js"
+  "/EnamulHaq/precache-manifest.6a6a228f9273a843c77cd588f4abfd13.js"
 );
 
 self.addEventListener('message', (event) => {
